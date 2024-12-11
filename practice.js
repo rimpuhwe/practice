@@ -58,7 +58,7 @@ function myFunction(a) {
   'object'*/
 //  4.Write a function that takes a string (a) and a number (n) as argument. Return the nth character of 'a'.
 function myFunction(a, n) {
-  return a.charAt(n-1);
+  return a.charAt(n - 1);
 }
 /*Test Cases:
 Attempted: 607983
@@ -72,3 +72,19 @@ Expected
 myFunction('gfedcba',3)
 Expected
 'e'*/
+// 5.Write a function that takes a string (a) as argument. Remove the first 3 characters of a. Return the result
+function myFunction(a) {
+  return a.slice(3);
+}
+/*Test Cases:
+Attempted: 265453
+Solved: 83240
+myFunction('abcdefg')
+Expected
+'defg'
+myFunction('1234')
+Expected
+'4'
+myFunction('fgedcba')
+Expected
+'dcba'*/
