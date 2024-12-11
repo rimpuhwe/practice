@@ -120,3 +120,19 @@ Expected
 myFunction('fgedcba')
 Expected
 'fge'*/
+// 8. Write a function that takes a string as argument. The string contains the substring 'is'. Return the index of 'is'.
+function myFunction(a) {
+  return a.indexOf("is");
+}
+/*Test Cases:
+Attempted: 110704
+Solved: 49685
+myFunction("praise")
+Expected
+3
+myFunction("risky")
+Expected
+1
+myFunction("paris")
+Expected
+3*/
