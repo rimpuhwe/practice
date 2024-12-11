@@ -104,3 +104,19 @@ Expected
 myFunction('fgedcba')
 Expected
 'cba'*/
+// 7.Write a function that takes a string (a) as argument. Get the first 3 characters of a. Return the result
+function myFunction(a) {
+  return a.slice(0, 3);
+}
+/*Test Cases:
+Attempted: 197111
+Solved: 78049
+myFunction('abcdefg')
+Expected
+'abc'
+myFunction('1234')
+Expected
+'123'
+myFunction('fgedcba')
+Expected
+'fge'*/
