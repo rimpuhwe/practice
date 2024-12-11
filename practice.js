@@ -16,9 +16,9 @@ Expected
 100*/
 // 2.Write a function that takes two values, say a and b, as arguments. Return true if the two values are equal and of the same type
 function myFunction(a, b) {
-    return a === b;
-  }
-  /*Test Cases:
+  return a === b;
+}
+/*Test Cases:
   Attempted: 387316
   Solved: 135992
   myFunction(2, 3)
@@ -31,11 +31,11 @@ function myFunction(a, b) {
   Expected
   false 
   */
-  // 3.Write a function that takes a value as argument. Return the type of the value.
-  function myFunction(a) {
-    return typeof a;
-  }
-  /*Test Cases:
+// 3.Write a function that takes a value as argument. Return the type of the value.
+function myFunction(a) {
+  return typeof a;
+}
+/*Test Cases:
   Attempted: 276535
   Solved: 125649
   myFunction(1)
@@ -56,4 +56,19 @@ function myFunction(a, b) {
   myFunction(['array'])
   Expected
   'object'*/
-  
+//  4.Write a function that takes a string (a) and a number (n) as argument. Return the nth character of 'a'.
+function myFunction(a, n) {
+  return a.charAt(n-1);
+}
+/*Test Cases:
+Attempted: 607983
+Solved: 98833
+myFunction('abcd',1)
+Expected
+'a'
+myFunction('zyxbwpl',5)
+Expected
+'w'
+myFunction('gfedcba',3)
+Expected
+'e'*/
