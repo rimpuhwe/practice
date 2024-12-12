@@ -167,3 +167,170 @@ Expected
 myFunction('fgedcba')
 Expected
 'fged'*/
+// 11.Write a function that takes two numbers (a and b) as argument. Return b percent of a
+
+function myFunction(a, b) {
+  return (b / 100) * a;
+}
+/*Test Cases:
+Attempted: 216714
+Solved: 55502
+myFunction(100,50)
+Expected
+50
+myFunction(10,1)
+Expected
+0.1
+myFunction(500,25)
+Expected
+125*/
+// 12.Write a function that takes 6 values (a,b,c,d,e,f) as arguments. Sum a and b. Then substract by c. Then multiply by d and divide by e. Finally raise to the power of f and return the result. Hint: mind the order.
+function myFunction(a, b, c, d, e, f) {
+  return Math.pow(((a + b - c) * d) / e, f);
+}
+/*Test Cases:
+Attempted: 139135
+Solved: 44925
+myFunction(6,5,4,3,2,1)
+Expected
+10.5
+myFunction(6,2,1,4,2,3)
+Expected
+2744
+myFunction(2,3,6,4,2,3)
+Expected
+-8*/
+// 13.Write a function that takes two strings (a and b) as arguments. If a contains b, append b to the beginning of a. If not, append it to the end. Return the concatenation
+function myFunction(a, b) {
+  if (a.includes(b)) {
+    return b + a;
+  } else {
+    return a + b;
+  }
+}
+/*Test Cases:
+Attempted: 150244
+Solved: 46077
+myFunction('cheese', 'cake')
+Expected
+'cheesecake'
+myFunction('lips', 's')
+Expected
+'slips'
+myFunction('Java', 'script')
+Expected
+'Javascript'
+myFunction(' think, therefore I am', 'I')
+Expected
+'I think, therefore I am'*/
+// 14.Write a function that takes a number as argument. If the number is even, return true. Otherwise, return false
+function myFunction(a) {
+  return a % 2 === 0;
+}
+/*Test Cases:
+Attempted: 106485
+Solved: 48887
+myFunction(10)
+Expected
+true
+myFunction(-4)
+Expected
+true
+myFunction(5)
+Expected
+false
+myFunction(-111)
+Expected
+false*/
+// ??15.Write a function that takes two strings (a and b) as arguments. Return the number of times a occurs in b.
+function myFunction(a, b) {
+  return b.split(a).length - 1;
+}
+/*Test Cases:
+Attempted: 186337
+Solved: 39186
+myFunction('m', 'how many times does the character occur in this sentence?')
+Expected
+2
+myFunction('h', 'how many times does the character occur in this sentence?')
+Expected
+4
+myFunction('?', 'how many times does the character occur in this sentence?')
+Expected
+1
+myFunction('z', 'how many times does the character occur in this sentence?')
+Expected
+0*/
+// 17.Write a function that takes a number (a) as argument. If a is a whole number (has no decimal place), return true. Otherwise, return false.
+function myFunction(a) {
+  return a % 1 === 0;
+}
+/*Test Cases:
+Attempted: 257562
+Solved: 71954
+myFunction(4)
+Expected
+true 
+myFunction(1.123)
+Expected
+false 
+myFunction(1048)
+Expected
+true 
+myFunction(10.48)
+Expected
+false */
+// 18.Write a function that takes two numbers (a and b) as arguments. If a is smaller than b, divide a by b. Otherwise, multiply both numbers. Return the resulting value
+function myFunction(a, b) {
+  return a < b ? a / b : a * b;
+}
+/*Test Cases:
+Attempted: 77258
+Solved: 44950
+myFunction(10, 100)
+Expected
+0.1
+myFunction(90, 45)
+Expected
+4050
+myFunction(8, 20)
+Expected
+0.4
+myFunction(2, 0.5)
+Expected
+1*/
+// 19.Write a function that takes a number (a) as argument. Round a to the 2nd digit after the decimal point. Return the rounded number
+function myFunction(a) {
+  return Number(a.toFixed(2));
+}
+/*Test Cases:
+Attempted: 155971
+Solved: 31168
+myFunction(2.12397)
+Expected
+2.12
+myFunction(3.136)
+Expected
+3.14
+myFunction(1.12397)
+Expected
+1.12
+myFunction(26.1379)
+Expected
+26.14*/
+// 20.Write a function that takes a number (a) as argument. Split a into its individual digits and return them in an array. Hint: you might want to change the type of the number for the splitting
+function myFunction(a) {
+  return a.toString().split("").map(Number);
+}
+/*Test Cases:
+Attempted: 182597
+Solved: 32601
+myFunction(10)
+Expected
+[1,0]
+myFunction(931)
+Expected
+[9,3,1]
+myFunction(193278)
+Expected
+[1,9,3,2,7,8]*/
